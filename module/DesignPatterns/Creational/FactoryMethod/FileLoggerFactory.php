@@ -8,6 +8,7 @@ class FileLoggerFactory implements LoggerFactory
      * @var string
      */
     private $filePath;
+
     public function __construct(string $filePath)
     {
         $this->filePath = $filePath;

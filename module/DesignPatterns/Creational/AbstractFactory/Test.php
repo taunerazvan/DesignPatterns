@@ -19,12 +19,18 @@ class AbstractFactoryTest extends TestCase
         $factory = new ParserFactory();
         $parser = $factory->createCsvParser(CsvParser::OPTION_CONTAINS_HEADER);
 
+        echo '<pre>';
+        print_r($parser);
+
         $this->assertInstanceOf(CsvParser::class, $parser);
     }
     public function testCanCreateJsonParser()
     {
         $factory = new ParserFactory();
         $parser = $factory->createJsonParser();
+
+        echo '<pre>';
+        print_r($parser);
 
         $this->assertInstanceOf(JsonParser::class, $parser);
     }

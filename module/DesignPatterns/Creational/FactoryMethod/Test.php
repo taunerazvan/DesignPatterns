@@ -22,12 +22,18 @@ class FactoryMethodTest extends TestCase
         $loggerFactory = new StdoutLoggerFactory();
         $logger = $loggerFactory->createLogger();
 
+        echo '<pre>';
+        print_r($logger);
+
         $this->assertInstanceOf(StdoutLogger::class, $logger);
     }
     public function testCanCreateFileLogging()
     {
         $loggerFactory = new FileLoggerFactory(sys_get_temp_dir());
         $logger = $loggerFactory->createLogger();
+
+        echo '<pre>';
+        print_r($logger);
 
         $this->assertInstanceOf(FileLogger::class, $logger);
     }
@@ -38,6 +44,8 @@ $parser = new FactoryMethodTest();
 
 echo '<pre>';
 var_dump($parser->testCanCreateStdoutLogging());
+echo '<br><br>';
+echo '<br><br>';
 var_dump($parser->testCanCreateFileLogging());
 
 die('xxxx');

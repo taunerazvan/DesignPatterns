@@ -9,7 +9,7 @@ class ParserFactory
         return new CsvParser($skipHeaderLine);
     }
 
-    public function createJsonParser(): JsonParser
+    public function  createJsonParser(): JsonParser
     {
         return new JsonParser();
     }
