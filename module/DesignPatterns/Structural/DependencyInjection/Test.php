@@ -17,12 +17,22 @@ class DependencyInjectionTest extends TestCase
     public function testDependencyInjection()
     {
         $config = new DatabaseConfiguration('localhost', 3306, 'domnikl', '1234');
+
+        echo '<pre>';
+        print_r($config);
+
         $connection = new DatabaseConnection($config);
 
         echo '<pre>';
         print_r($connection);
 
+        echo '<pre>';
+        print_r($connection->getDsn());
+
         $this->assertEquals('domnikl:1234@localhost:3306', $connection->getDsn());
     }
 }
 
+
+$a = new DependencyInjectionTest;
+$a->testDependencyInjection();

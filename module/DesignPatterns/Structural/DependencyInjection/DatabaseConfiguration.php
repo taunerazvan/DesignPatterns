@@ -20,6 +20,7 @@ class DatabaseConfiguration
      * @var string
      */
     private $password;
+
     public function __construct(string $host, int $port, string $username, string $password)
     {
         $this->host = $host;
