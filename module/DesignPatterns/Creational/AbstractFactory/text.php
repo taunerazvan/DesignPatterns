@@ -26,7 +26,6 @@ composed, and represented
     A family of related product objects is designed to be used together, and you
 need to enforce this constraint
 
-
 Consequences:
     Benefits:
         › Isolates clients from concrete implementation classes
