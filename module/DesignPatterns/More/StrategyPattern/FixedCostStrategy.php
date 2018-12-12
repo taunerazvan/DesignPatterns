@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\More\StrategyPattern;
 
-use DesignPatterns\More\StrategyPattern\Lesson as Lesson;
+use DesignPatterns\More\StrategyPattern\Lesson as  Lesson;
 
 class FixedCostStrategy extends CostStrategy
 {
