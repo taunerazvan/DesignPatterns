@@ -19,6 +19,7 @@ class StrategyPattern extends TestCase
         $mgr = new RegistrationMgr();
 
         $mgr->register($lessons1);
+        echo '<br>';
         $mgr->register($lessons2);
 
     }

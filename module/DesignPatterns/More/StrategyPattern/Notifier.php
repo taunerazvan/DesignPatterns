@@ -15,5 +15,6 @@ abstract class Notifier
             return new TextNotifier();
         }
     }
+
     abstract public function inform($message);
 }
